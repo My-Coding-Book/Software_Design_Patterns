@@ -7,8 +7,14 @@ Design pattern is a very important section of Software Engineering, which is a g
 ### Different Design Patterns
 All design patterns are grouped into 3 groups
 * #### Creational Design Pattern
-    This design pattern deal with the object creation mechanisms, the best way to instantiate an object that is suitable to the situation. 
-* Structural Design Pattern
+
+    * This design pattern deals with object creation mechanisms, which are suitable for the situation. 
+    * Used in scenarios when a system should not be dependant on how objects are created.
+    *
+    
+* #### Structural Design Pattern
+
+    
 * Behavioral Design Pattern
 
 | # | Creational Design Pattern | # | Structural Design Pattern | # | Behavioral Design Pattern |
