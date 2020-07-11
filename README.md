@@ -6,7 +6,7 @@ Design pattern is a very important section of Software Engineering, which is a g
 
 ### Different Design Patterns
 All design patterns are grouped into 3 groups
-* Creational Design Pattern
+* #### Creational Design Pattern - This design pattern deal with the object creation mechanisms, the best way to instantiate an object that is suitable to the situation. 
 * Structural Design Pattern
 * Behavioral Design Pattern
 
@@ -28,43 +28,15 @@ All design patterns are grouped into 3 groups
 (*) - Important Software Design Patterns
 
 
-3. #### Factory Method
-
-hjgreyj
-hjgte
-ffhgsgj
-ejyyt
-ehgjer
-yteryt
-etyty
-gheuyt
-jytrweytw
+1. #### Factory Method
 
 
-1. #### Abstract Factory
 
-hfgsf
-hgfhs
-fdgg
-fg
-fg
-fghh
-dgg
-ddsggg
-tgrtg
+2. #### Abstract Factory
 
-2. #### Builder
 
-eg
-etettry
-frty
-rhtyh
-sfhtry
-dffgh
-etr
-rrtyuer
-dtyyry
-grytyu
+
+3. #### Builder
 
 
 
