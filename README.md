@@ -28,3 +28,24 @@ All design patterns are grouped into 3 groups
 (*) - Important Software Design Patterns
 
 
+1. #### Abstract Factory
+
+
+
+2. #### Builder
+
+
+
+3. #### Factory Method
+
+
+
+4. #### Object Pool
+
+
+
+5. #### Prototype
+
+
+
+6. #### Singleton
