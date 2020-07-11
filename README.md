@@ -11,4 +11,5 @@ All design patterns are grouped into 3 groups
 * Behavioral Design Pattern
 
 | Creational Design Pattern | Structural Design Pattern | Behavioral Design Pattern |
+| ------------------------- | ------------------------- | ------------------------- |
 | Abstract Factory | Adapter | Chain of Responsibility |
