@@ -9,8 +9,11 @@ All design patterns are grouped into 3 groups
 * #### Creational Design Pattern
 
     * This design pattern deals with object creation mechanisms, which are suitable for the situation. 
-    * Used in scenarios when a system should not be dependant on how objects are created.
-    *
+    * Used in scenarios when system should not be dependant on, 'how objects are created?'.
+    * The basic object creation technique may complecate the design and create complexity for developers, where creational design pattern solve this problem by controlling the object creation process.
+    * All Creational Design Patterns are based on two common ideas,
+      * They encapsulate knowledge about which concrete class the system should use.
+      * They hide, how instances of these concrete classes are created and combined.
     
 * #### Structural Design Pattern
 
