@@ -12,9 +12,9 @@ All design patterns are grouped into 3 groups
 
 | # | Creational Design Pattern | # | Structural Design Pattern | # | Behavioral Design Pattern |
 | - | ------------------------- | - | ------------------------- | - | ------------------------- |
-| 1 | [Abstract Factory](#abstract-factory) | 7 | [Adapter * ](#adapter) | 15 | [Chain of Responsibility](#chain-of-responsibility) |
-| 2 | [Builder * ](#builder) | 8 | [Bridge](#bridge) | 16 | [Command](#command) |
-| 3 | [Factory Method * ](#factory-method) | 9 | [Composite](#composite) | 17 | [Interpreter](#interpreter) |
+| 1 | [Factory Method * ](#factory-method) | 7 | [Adapter * ](#adapter) | 15 | [Chain of Responsibility](#chain-of-responsibility) |
+| 2 | [Abstract Factory](#abstract-factory) | 8 | [Bridge](#bridge) | 16 | [Command](#command) |
+| 3 | [Builder * ](#builder) | 9 | [Composite](#composite) | 17 | [Interpreter](#interpreter) |
 | 4 | [Object Pool](#object-pool) | 10 | [Decorator](#decorator) | 18 | [Iterator](#iterator) |
 | 5 | [Prototype](#prototype) | 11 | [Facade](#facade) | 19 | [Mediator](#mediator) |
 | 6 | [Singleton * ](#singleton) | 12 | [Flyweight](#flyweight) | 20 | [Memento](#memento) |
@@ -30,14 +30,40 @@ All design patterns are grouped into 3 groups
 
 1. #### Abstract Factory
 
-
+hfgsf
+hgfhs
+fdgg
+fg
+fg
+fghh
+dgg
+ddsggg
+tgrtg
 
 2. #### Builder
 
-
+eg
+etettry
+frty
+rhtyh
+sfhtry
+dffgh
+etr
+rrtyuer
+dtyyry
+grytyu
 
 3. #### Factory Method
 
+hjgreyj
+hjgte
+ffhgsgj
+ejyyt
+ehgjer
+yteryt
+etyty
+gheuyt
+jytrweytw
 
 
 4. #### Object Pool
