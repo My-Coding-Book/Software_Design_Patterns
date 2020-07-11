@@ -28,6 +28,19 @@ All design patterns are grouped into 3 groups
 (*) - Important Software Design Patterns
 
 
+3. #### Factory Method
+
+hjgreyj
+hjgte
+ffhgsgj
+ejyyt
+ehgjer
+yteryt
+etyty
+gheuyt
+jytrweytw
+
+
 1. #### Abstract Factory
 
 hfgsf
@@ -53,17 +66,6 @@ rrtyuer
 dtyyry
 grytyu
 
-3. #### Factory Method
-
-hjgreyj
-hjgte
-ffhgsgj
-ejyyt
-ehgjer
-yteryt
-etyty
-gheuyt
-jytrweytw
 
 
 4. #### Object Pool
