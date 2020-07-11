@@ -12,8 +12,8 @@ All design patterns are grouped into 3 groups
 
 | # | Creational Design Pattern | # | Structural Design Pattern | # | Behavioral Design Pattern |
 | - | ------------------------- | - | ------------------------- | - | ------------------------- |
-| 1 | Abstract Factory | 7 | *Adapter | 15 | Chain of Responsibility |
-| 2 | *Builder | 8 | Bridge | 16 | Command |
+| 1 | Abstract Factory | 7 | Adapter * | 15 | Chain of Responsibility |
+| 2 | Builder * | 8 | Bridge | 16 | Command |
 | 3 | *Factory Method | 9 | Composite | 17 | Interpreter |
 | 4 | Object Pool | 10 | Decorator | 18 | Iterator |
 | 5 | Prototype | 11 | Facade | 19 | Mediator |
