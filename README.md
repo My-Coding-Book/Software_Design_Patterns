@@ -8,17 +8,26 @@ Design pattern is a very important section of Software Engineering, which is a g
 All design patterns are grouped into 3 groups
 * #### Creational Design Pattern
 
-    * This design pattern deals with object creation mechanisms, which are suitable for the situation. 
+    * This design patterns deals with object creation mechanisms, which mechanism is suitable for the situation. 
     * Used in scenarios when system should not be dependant on, 'how objects are created?'.
-    * The basic object creation technique may complecate the design and create complexity for developers, where creational design pattern solve this problem by controlling the object creation process.
+    * The basic object creation technique may complecate the design and create complexity for developers, where creational design patterns solve this problem by controlling the object creation process.
+    * This design patterns allows you to reuse other people’s knowledge.
     * All Creational Design Patterns are based on two common ideas,
       * They encapsulate knowledge about which concrete class the system should use.
       * They hide, how instances of these concrete classes are created and combined.
     
 * #### Structural Design Pattern
 
+   * The Sructural Design Patterns ease the design by identifying a simple way to realize the relationship among entities.
+   * Sructural Design Patterns are about organizing different classes and objects to form large structure and provide new functionalies without any change in the existing design structure.
+   * Structural Design Patterns depends on two programming concepts, Inheritance and Interface to allow multiple classes and objects to work togather and form a single working structure.
     
-* Behavioral Design Pattern
+* #### Behavioural Design Pattern
+
+   * Behavioural Design Patterns are concerned with object interaction and responsibilities
+   * The interaction between the objects should be in such a way that they can easily talk to each other and still should be loosely coupled.
+   * The implemantation and the client should be loosely coupledin order to avoid avoid hard coding and dependencies.
+   
 
 | # | Creational Design Pattern | # | Structural Design Pattern | # | Behavioral Design Pattern |
 | - | ------------------------- | - | ------------------------- | - | ------------------------- |
