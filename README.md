@@ -49,7 +49,8 @@ All design patterns are grouped into 3 groups
 
 1. #### Factory Method
 
-
+   * Factory method design pattern uses a factory method as an interface to create objects instead of using a direct instantiation of objects, using 'new' keyword.
+   * This allows, 
 
 2. #### Abstract Factory
 
