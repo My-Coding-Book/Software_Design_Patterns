@@ -67,13 +67,13 @@ All design patterns are grouped into 3 groups
       </p>
    </div>
    * Code Implementation
-   ```java
-   package com.eliza.common;
+      ```java
+      package com.eliza.common;
 
-   public interface Trip {
-      public void trip();
-   }
-        ```
+      public interface Trip {
+         public void trip();
+      }
+      ```
 
 2. #### Abstract Factory
 
