@@ -68,131 +68,137 @@ All design patterns are grouped into 3 groups
    </div>
    * Code Implementation
    
-   Step 1: Trip.java, Interface
-      
-      ```java
-      package com.eliza.common;
+      Step 1: Trip.java, Interface
 
-      public interface Trip {
-         public void trip();
-      }
-      ```
-      
-   Step 2: AirTrip.java, RoadTrip.java, MerineTrip.java, all concrete classes
+         ```java
+         package com.eliza.common;
 
-      ```java
-      package com.eliza.concreteClasses;
-
-      import java.util.logging.Level;
-      import java.util.logging.Logger;
-
-      import com.eliza.common.Trip;
-
-      public class AirTrip implements Trip{
-
-         static Logger logger = Logger.getLogger(AirTrip.class.getSimpleName());
-         @Override
-         public void trip() {
-              logger.log(Level.INFO, logger.toString());
-
+         public interface Trip {
+            public void trip();
          }
+         ```
 
-      }
-      ```
+      Step 2: AirTrip.java, RoadTrip.java, MerineTrip.java, all concrete classes
       
-      ```
-      package com.eliza.concreteClasses;
-
-      import java.util.logging.Level;
-      import java.util.logging.Logger;
-
-      import com.eliza.common.Trip;
-
-      public class RoadTrip implements Trip {
-
-         static Logger logger = Logger.getLogger(RoadTrip.class.getSimpleName());
-         @Override
-         public void trip() {
-              logger.log(Level.INFO, logger.toString());
-
-         }
-
-      }
-      ```
+      AirTrip.java
       
-      ```
-      package com.eliza.concreteClasses;
+         ```java
+         package com.eliza.concreteClasses;
 
-      import java.util.logging.Level;
-      import java.util.logging.Logger;
+         import java.util.logging.Level;
+         import java.util.logging.Logger;
 
-      import com.eliza.common.Trip;
+         import com.eliza.common.Trip;
 
-      public class MerineTrip implements Trip {
+         public class AirTrip implements Trip{
 
-         static Logger logger = Logger.getLogger(MerineTrip.class.getSimpleName());
-         @Override
-         public void trip() {
-              logger.log(Level.INFO, logger.toString());
+            static Logger logger = Logger.getLogger(AirTrip.class.getSimpleName());
+            @Override
+            public void trip() {
+                 logger.log(Level.INFO, logger.toString());
 
-         }
-
-      }
-      ```
-      
-      Step 3: MakeMyTrip.java, Factory Class
-      
-      ```java
-      package com.eliza.factoryClass;
-
-      import com.eliza.common.Trip;
-      import com.eliza.concreteClasses.AirTrip;
-      import com.eliza.concreteClasses.MerineTrip;
-      import com.eliza.concreteClasses.RoadTrip;
-
-      public class MakeMyTrip {
-
-         public Trip factoryMethod(String way) {
-            if("FLY".equalsIgnoreCase(way)) {
-               return new AirTrip();
-            } else if("RUN".equalsIgnoreCase(way)) {
-               return new RoadTrip();
-            } else if("SWIM".equalsIgnoreCase(way)) {
-               return new MerineTrip();
             }
-            return null;
+
          }
-      }
-      ```
+         ```
       
-      Step 3: MyTrip.java, Client
+      RoadTrip.java
       
-      ```java
-      package com.eliza.client;
+         ```
+         package com.eliza.concreteClasses;
 
-      import com.eliza.common.Trip;
-      import com.eliza.factoryClass.MakeMyTrip;
+         import java.util.logging.Level;
+         import java.util.logging.Logger;
 
-      public class MyTrip {
+         import com.eliza.common.Trip;
 
-         public static void main(String[] args) {
+         public class RoadTrip implements Trip {
 
-            //AirTrip Object
-            MakeMyTrip mmt = new MakeMyTrip();
-            Trip myTrip = mmt.factoryMethod("fly");
-            myTrip.trip();
+            static Logger logger = Logger.getLogger(RoadTrip.class.getSimpleName());
+            @Override
+            public void trip() {
+                 logger.log(Level.INFO, logger.toString());
 
-            //RoadTrip Object
-            myTrip = mmt.factoryMethod("run");
-            myTrip.trip();
+            }
 
-            //MerineTrip Object
-            myTrip = mmt.factoryMethod("swim");
-            myTrip.trip();
          }
+         ```
 
-      }
-      ```
+      MerineTrip.java
+
+         ```
+         package com.eliza.concreteClasses;
+
+         import java.util.logging.Level;
+         import java.util.logging.Logger;
+
+         import com.eliza.common.Trip;
+
+         public class MerineTrip implements Trip {
+
+            static Logger logger = Logger.getLogger(MerineTrip.class.getSimpleName());
+            @Override
+            public void trip() {
+                 logger.log(Level.INFO, logger.toString());
+
+            }
+
+         }
+         ```
+
+      Step 3: MakeMyTrip.java, Factory Class
+
+         ```java
+         package com.eliza.factoryClass;
+
+         import com.eliza.common.Trip;
+         import com.eliza.concreteClasses.AirTrip;
+         import com.eliza.concreteClasses.MerineTrip;
+         import com.eliza.concreteClasses.RoadTrip;
+
+         public class MakeMyTrip {
+
+            public Trip factoryMethod(String way) {
+               if("FLY".equalsIgnoreCase(way)) {
+                  return new AirTrip();
+               } else if("RUN".equalsIgnoreCase(way)) {
+                  return new RoadTrip();
+               } else if("SWIM".equalsIgnoreCase(way)) {
+                  return new MerineTrip();
+               }
+               return null;
+            }
+         }
+         ```
+
+      Step 4: MyTrip.java, Client
+
+         ```java
+         package com.eliza.client;
+
+         import com.eliza.common.Trip;
+         import com.eliza.factoryClass.MakeMyTrip;
+
+         public class MyTrip {
+
+            public static void main(String[] args) {
+
+               //AirTrip Object
+               MakeMyTrip mmt = new MakeMyTrip();
+               Trip myTrip = mmt.factoryMethod("fly");
+               myTrip.trip();
+
+               //RoadTrip Object
+               myTrip = mmt.factoryMethod("run");
+               myTrip.trip();
+
+               //MerineTrip Object
+               myTrip = mmt.factoryMethod("swim");
+               myTrip.trip();
+            }
+
+         }
+         ```
 
 
 2. #### Abstract Factory
