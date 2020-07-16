@@ -62,7 +62,7 @@ All design patterns are grouped into 3 groups
    <div align="center">
       <p>
          <div>
-             <img src="https://user-images.githubusercontent.com/13550565/76382460-cc784d80-6393-11ea-8837-2b89265ac853.png" width="260" alt="FullStack.Cafe">
+             <img src="factory method design pattern.JPG" alt="Factory Design Pattern Image File">
          </div>
       </p>
    </div>
