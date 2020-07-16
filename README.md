@@ -222,6 +222,28 @@ All design patterns are grouped into 3 groups
 7. #### Adapter
 
 
+8. #### Bridge
+
+
+9. #### Composite
+
+
+
+10. #### Decorator
+
+
+11. #### Facade
+
+
+12. #### Flyweight
+
+
+13. #### Private Class Data
+
+
+14. #### Proxy
+
+
 
 
 
