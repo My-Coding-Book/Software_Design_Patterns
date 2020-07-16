@@ -70,19 +70,16 @@ All design patterns are grouped into 3 groups
    
       Step 1: Trip.java, Interface
 
-         ```java
          package com.eliza.common;
 
          public interface Trip {
             public void trip();
          }
-         ```
 
       Step 2: AirTrip.java, RoadTrip.java, MerineTrip.java, all concrete classes
       
       AirTrip.java
       
-         ```java
          package com.eliza.concreteClasses;
 
          import java.util.logging.Level;
@@ -100,11 +97,9 @@ All design patterns are grouped into 3 groups
             }
 
          }
-         ```
-      
+         
       RoadTrip.java
       
-         ```
          package com.eliza.concreteClasses;
 
          import java.util.logging.Level;
@@ -122,11 +117,9 @@ All design patterns are grouped into 3 groups
             }
 
          }
-         ```
 
       MerineTrip.java
 
-         ```
          package com.eliza.concreteClasses;
 
          import java.util.logging.Level;
@@ -144,11 +137,9 @@ All design patterns are grouped into 3 groups
             }
 
          }
-         ```
 
       Step 3: MakeMyTrip.java, Factory Class
 
-         ```java
          package com.eliza.factoryClass;
 
          import com.eliza.common.Trip;
@@ -169,11 +160,9 @@ All design patterns are grouped into 3 groups
                return null;
             }
          }
-         ```
 
       Step 4: MyTrip.java, Client
 
-         ```java
          package com.eliza.client;
 
          import com.eliza.common.Trip;
@@ -198,7 +187,6 @@ All design patterns are grouped into 3 groups
             }
 
          }
-         ```
 
 
 2. #### Abstract Factory
