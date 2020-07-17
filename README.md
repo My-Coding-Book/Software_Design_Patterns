@@ -47,7 +47,7 @@ All design patterns are grouped into 3 groups
 (*) - Important Software Design Patterns
 
 
-1. #### Factory Method
+1. #### Factory Method Design Pattern
 
    * Factory method design pattern uses a factory method as an interface to create objects instead of using a direct instantiation of objects, using 'new' keyword.
    * Define an interface or abstract class for creating an object and let the subclass decide which class to instantiate.
@@ -58,7 +58,7 @@ All design patterns are grouped into 3 groups
       * It eliminates the direct binding of application-specific classes to the code.
       * To achieve that, we use either an interface or an abstract class so that we can work with any class that is implementing this interface or abstract class.
       * We use this when a class doesn't know which subclass to instantiate.
-   * UML Diagram
+   * ##### UML Diagram
    <div align="center">
       <p>
          <div>
@@ -66,9 +66,9 @@ All design patterns are grouped into 3 groups
          </div>
       </p>
    </div>
-   * Code Implementation
+   * ##### Code Implementation
    
-      Step 1: Trip.java, a generic(general, common) Interface
+      ##### Step 1: Trip.java, a generic(general, common) Interface
 
       ```java
       package com.eliza.common;
@@ -78,7 +78,7 @@ All design patterns are grouped into 3 groups
       }
       ```
 
-      Step 2: AirTrip.java, RoadTrip.java, MerineTrip.java, all concrete classes
+      ##### Step 2: AirTrip.java, RoadTrip.java, MerineTrip.java, all concrete classes
       
       AirTrip.java
       
@@ -102,7 +102,7 @@ All design patterns are grouped into 3 groups
       }
       ```
          
-      RoadTrip.java
+      ##### RoadTrip.java
       
       ```java
       package com.eliza.concreteClasses;
@@ -124,7 +124,7 @@ All design patterns are grouped into 3 groups
       }
       ```
 
-      MerineTrip.java
+      ##### MerineTrip.java
 
       ```java
       package com.eliza.concreteClasses;
@@ -146,7 +146,7 @@ All design patterns are grouped into 3 groups
       }
       ```
 
-      Step 3: MakeMyTrip.java, Factory Class
+      ##### Step 3: MakeMyTrip.java, Factory Class
 
       ```java
       package com.eliza.factoryClass;
@@ -171,7 +171,7 @@ All design patterns are grouped into 3 groups
       }
       ```
 
-      Step 4: MyTrip.java, Client
+      ##### Step 4: MyTrip.java, Client
 
       ```java
       package com.eliza.client;
@@ -200,7 +200,7 @@ All design patterns are grouped into 3 groups
       }
       ```
 
-2. #### Abstract Factory
+2. #### Abstract Factory Design Pattern
 
    * In other words, Factory of factories.
    * 
