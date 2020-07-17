@@ -1,11 +1,16 @@
 # Software Design Patterns
+
 Let's learn all type of software design patterns and their importance.
+Before that you must have a basic understaning of [ULM Diagram](UMLNotes.md)
 
 ## Introduction
+
 Design pattern is a very important section of Software Engineering, which is a general and reusable solution to a commonly occurring problem within a given context in software design. Rather than a complete finish product to code, it is a concept or idea or template that we are using in different situations to solve different problems in the process of software design.
 
 ### Different Design Patterns
+
 All design patterns are grouped into 3 groups
+
 * #### Creational Design Pattern
 
     * This design patterns deals with object creation mechanisms, which mechanism is suitable for the situation. 
@@ -207,9 +212,10 @@ All design patterns are grouped into 3 groups
 
 2. #### Abstract Factory
 
-   * Abstract Factory Design Pattern is almost similar to [Factory Method Design Pattern](#factory-method), but the fact is that its more like  ##### factory of factories.
-   * Abstract Factory Design Pattern provides a way to encapsulate a group of individual factories ( factory - an object for creating other objects, [Factory Method Design Pattern](#factory-method) ) that have a common concern without specifying their concrete classes directly.
-   * 
+   * Abstract Factory Design Pattern is almost similar to [Factory Method Design Pattern](#factory-method), but the fact is that its more like factory of factories.
+   * Abstract Factory Design Pattern provides a way to encapsulate a group of individual factories ( factory - an object for creating other objects ) that have a common concern without specifying their concrete classes directly.
+   * Factory Method Design Pattern holds only one factory class, which returns different types of objects based on the input provided, using either if-else or switch statement.
+   * In Abstract Factory Design Pattern, we get rid of if-else and have a factory class for each subclass, and now these abstract factory class returns the subclass based on input factory class.
 
 3. #### Builder
 
