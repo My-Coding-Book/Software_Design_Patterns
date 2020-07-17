@@ -68,7 +68,7 @@ All design patterns are grouped into 3 groups
    </div>
    * Code Implementation
    
-      Step 1: Trip.java, Interface
+      Step 1: Trip.java, a generic(general, common) Interface
 
       ```java
       package com.eliza.common;
@@ -202,7 +202,8 @@ All design patterns are grouped into 3 groups
 
 2. #### Abstract Factory
 
-
+   * In other words, Factory of factories.
+   * 
 
 3. #### Builder
 
