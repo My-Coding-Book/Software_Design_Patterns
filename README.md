@@ -71,7 +71,7 @@ All design patterns are grouped into 3 groups
    <div align="center">
       <p>
          <div>
-             <img src="factory method design pattern.JPG" alt="Factory Design Pattern Image File">
+             <img src="images/factory method design pattern.JPG" alt="Factory Design Pattern Image File">
          </div>
       </p>
    </div>
