@@ -207,7 +207,7 @@ All design patterns are grouped into 3 groups
 
 2. #### Abstract Factory
 
-   * Abstract Factory Design Pattern is almost similar to [Factory Method Design Pattern](#factory-method), but the fact is that its more like ##### factory of factories.
+   * Abstract Factory Design Pattern is almost similar to [Factory Method Design Pattern](#factory-method), but the fact is that its more like  ##### factory of factories.
    * Abstract Factory Design Pattern provides a way to encapsulate a group of individual factories ( factory - an object for creating other objects, [Factory Method Design Pattern](#factory-method) ) that have a common concern without specifying their concrete classes directly.
    * 
 
