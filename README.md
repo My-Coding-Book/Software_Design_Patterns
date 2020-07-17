@@ -52,13 +52,17 @@ All design patterns are grouped into 3 groups
    * Factory method design pattern uses a factory method as an interface to create objects instead of using a direct instantiation of objects, using 'new' keyword.
    * Define an interface or abstract class for creating an object and let the subclass decide which class to instantiate.
    * Also known as virtual constructor.
+   
    * ##### Advantages
+   
       * Allows the subclass to choose the type of object to create.
       * This promotes loose-coupling, i.e., objects are independent.
       * It eliminates the direct binding of application-specific classes to the code.
       * To achieve that, we use either an interface or an abstract class so that we can work with any class that is implementing this interface or abstract class.
       * We use this when a class doesn't know which subclass to instantiate.
+      
    * ##### UML Diagram
+   
    <div align="center">
       <p>
          <div>
@@ -66,6 +70,7 @@ All design patterns are grouped into 3 groups
          </div>
       </p>
    </div>
+   
    * ##### Code Implementation
    
       ##### Step 1: Trip.java, a generic(general, common) Interface
