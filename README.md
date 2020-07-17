@@ -47,7 +47,7 @@ All design patterns are grouped into 3 groups
 (*) - Important Software Design Patterns
 
 
-1. #### Factory Method Design Pattern
+1. #### Factory Method
 
    * Factory method design pattern uses a factory method as an interface to create objects instead of using a direct instantiation of objects, using 'new' keyword.
    * Define an interface or abstract class for creating an object and let the subclass decide which class to instantiate.
@@ -205,10 +205,10 @@ All design patterns are grouped into 3 groups
       }
       ```
 
-2. #### Abstract Factory Design Pattern
+2. #### Abstract Factory
 
    * In other words, Factory of factories.
-   * 
+   * Abstract Factory Design Pattern provides a way to encapsulate a group of individual factories ( factory - an object for creating other objects, [Factory Method Design Pattern](#factory-method) ) that have a common concern without specifying their concrete classes directly.
 
 3. #### Builder
 
