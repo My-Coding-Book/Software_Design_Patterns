@@ -58,7 +58,7 @@ All design patterns are grouped into 3 groups
    * Define an interface or abstract class for creating an object and let the subclass decide which class to instantiate.
    * Also known as virtual constructor.
    
-   * ##### Advantages
+   * **Advantages**
    
       * Allows the subclass to choose the type of object to create.
       * This promotes loose-coupling, i.e., objects are independent.
@@ -66,7 +66,7 @@ All design patterns are grouped into 3 groups
       * To achieve that, we use either an interface or an abstract class so that we can work with any class that is implementing this interface or abstract class.
       * We use this when a class doesn't know which subclass to instantiate.
       
-   * ##### UML Diagram
+   * **UML Diagram**
    
    <div align="center">
       <p>
@@ -76,9 +76,9 @@ All design patterns are grouped into 3 groups
       </p>
    </div>
    
-   * ##### Code Implementation
+   * **Code Implementation**
    
-      ##### Step 1: Trip.java, a generic(general, common) Interface
+      _Step 1: Trip.java, a generic(general, common) Interface_
 
       ```java
       package com.eliza.common;
@@ -88,9 +88,9 @@ All design patterns are grouped into 3 groups
       }
       ```
 
-      ##### Step 2: AirTrip.java, RoadTrip.java, MerineTrip.java, all concrete classes
+      _Step 2: AirTrip.java, RoadTrip.java, MerineTrip.java, all concrete classes_
       
-      AirTrip.java
+      *AirTrip.java*
       
       ```java
       package com.eliza.concreteClasses;
@@ -112,7 +112,7 @@ All design patterns are grouped into 3 groups
       }
       ```
          
-      ##### RoadTrip.java
+      *RoadTrip.java*
       
       ```java
       package com.eliza.concreteClasses;
@@ -134,7 +134,7 @@ All design patterns are grouped into 3 groups
       }
       ```
 
-      ##### MerineTrip.java
+      *MerineTrip.java*
 
       ```java
       package com.eliza.concreteClasses;
@@ -156,7 +156,7 @@ All design patterns are grouped into 3 groups
       }
       ```
 
-      ##### Step 3: MakeMyTrip.java, Factory Class
+      *Step 3: MakeMyTrip.java, Factory Class*
 
       ```java
       package com.eliza.factoryClass;
@@ -181,7 +181,7 @@ All design patterns are grouped into 3 groups
       }
       ```
 
-      ##### Step 4: MyTrip.java, Client
+      *Step 4: MyTrip.java, Client*
 
       ```java
       package com.eliza.client;
