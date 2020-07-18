@@ -76,6 +76,8 @@ All design patterns are grouped into 3 groups
       </p>
    </div>
    
+   **Note:-** In the below code we used trip(),which is run() here in image.
+   
    * **Code Implementation**
    
       _Step 1: Trip.java, a generic(general, common) Interface_
@@ -216,7 +218,17 @@ All design patterns are grouped into 3 groups
    * Abstract Factory Design Pattern provides a way to encapsulate a group of individual factories ( factory - an object for creating other objects ) that have a common concern without specifying their concrete classes directly.
    * Factory Method Design Pattern holds only one factory class, which returns different types of objects based on the input provided, using either if-else or switch statement.
    * In Abstract Factory Design Pattern, we get rid of if-else and have a factory class for each subclass, and now these abstract factory class returns the subclass based on input factory class.
-   * Abstract factory works aroung a super-factory which creates other factories.
+   * Abstract factory works aroung a super-factory which creates other factories. 
+   * **Advantages**
+   
+      * Abstract Factory Design Pattern separates the client code from concrete implementation.
+      * When the system is independent of how its object is created, composed, and presented.
+      * When a family of related objects, has to be used together.
+      * When you want to show a library of objects, without revealing the implementation, through a generic interface.
+      * When the system wants to be configured with one of a multiple families of objects.
+      
+   * **UML Diagram**
+   
    
 
 3. #### Builder
