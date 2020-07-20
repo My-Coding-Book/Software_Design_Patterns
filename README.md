@@ -76,8 +76,6 @@ All design patterns are grouped into 3 groups
       </p>
    </div>
    
-   **Note:-** In the below code we used trip(),which is run() here in image.
-   
    * **Code Implementation**
    
       _Step 1: Trip.java, a generic(general, common) Interface_
