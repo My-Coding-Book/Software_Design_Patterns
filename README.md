@@ -81,7 +81,7 @@ All design patterns are grouped into 3 groups
       _Step 1: Trip.java, a generic(general, common) Interface_
 
       ```java
-      package com.eliza.common;
+      package com.common;
 
       public interface Trip {
          public void trip();
@@ -93,12 +93,12 @@ All design patterns are grouped into 3 groups
       *AirTrip.java*
       
       ```java
-      package com.eliza.concreteClasses;
+      package com.concreteClasses;
 
       import java.util.logging.Level;
       import java.util.logging.Logger;
 
-      import com.eliza.common.Trip;
+      import com.common.Trip;
 
       public class AirTrip implements Trip{
 
@@ -115,12 +115,12 @@ All design patterns are grouped into 3 groups
       *RoadTrip.java*
       
       ```java
-      package com.eliza.concreteClasses;
+      package com.concreteClasses;
 
       import java.util.logging.Level;
       import java.util.logging.Logger;
 
-      import com.eliza.common.Trip;
+      import com.common.Trip;
 
       public class RoadTrip implements Trip {
 
@@ -137,12 +137,12 @@ All design patterns are grouped into 3 groups
       *MerineTrip.java*
 
       ```java
-      package com.eliza.concreteClasses;
+      package com.concreteClasses;
 
       import java.util.logging.Level;
       import java.util.logging.Logger;
 
-      import com.eliza.common.Trip;
+      import com.common.Trip;
 
       public class MerineTrip implements Trip {
 
@@ -159,12 +159,12 @@ All design patterns are grouped into 3 groups
       *Step 3: MakeMyTrip.java, Factory Class*
 
       ```java
-      package com.eliza.factoryClass;
+      package com.factoryClass;
 
-      import com.eliza.common.Trip;
-      import com.eliza.concreteClasses.AirTrip;
-      import com.eliza.concreteClasses.MerineTrip;
-      import com.eliza.concreteClasses.RoadTrip;
+      import com.common.Trip;
+      import com.concreteClasses.AirTrip;
+      import com.concreteClasses.MerineTrip;
+      import com.concreteClasses.RoadTrip;
 
       public class MakeMyTrip {
 
@@ -184,10 +184,10 @@ All design patterns are grouped into 3 groups
       *Step 4: MyTrip.java, Client*
 
       ```java
-      package com.eliza.client;
+      package com.client;
 
-      import com.eliza.common.Trip;
-      import com.eliza.factoryClass.MakeMyTrip;
+      import com.common.Trip;
+      import com.factoryClass.MakeMyTrip;
 
       public class MyTrip {
 
@@ -234,6 +234,316 @@ All design patterns are grouped into 3 groups
          </div>
       </p>
    </div>
+   
+   * **Code Implementation**
+   
+   *Step 1 : Trip.java, Create a common interface for our products (this can be a Interface / a Abstract Class)*
+   
+   ```java
+   package com.products.prod_Interface;
+
+   public interface Trip {
+      public void trip();
+
+   }
+   ```
+
+   *Step 2 : Add all products, our concrete classes*
+   
+   *AirBusiness.java*
+   
+   ```java
+   package com.products.prod_classes;
+
+   import java.util.logging.Level;
+   import java.util.logging.Logger;
+
+   import com.products.prod_Interface.Trip;
+
+   public class AirBusiness implements Trip{
+
+      static Logger logger = Logger.getLogger(AirBusiness.class.getSimpleName());
+
+      @Override
+      public void trip() {
+         logger.log(Level.INFO, "Yes, we are giving Airoplane service to the selected location, and business tickets are avoilable.");
+      }
+
+   }
+   ```
+   
+   *AirEconomy.java*
+   
+   ```java
+   package com.products.prod_classes;
+
+   import java.util.logging.Level;
+   import java.util.logging.Logger;
+
+   import com.products.prod_Interface.Trip;
+
+   public class AirEconomy implements Trip{
+
+      static Logger logger = Logger.getLogger(AirEconomy.class.getSimpleName());
+
+      @Override
+      public void trip() {
+         logger.log(Level.INFO, "Yes, we are giving Airoplane service to the selected location.");
+      }
+
+   }
+   ```
+   
+   *MerineBusiness.java*
+   
+   ```java
+   package com.products.prod_classes;
+
+   import java.util.logging.Level;
+   import java.util.logging.Logger;
+
+   import com.products.prod_Interface.Trip;
+
+   public class MerineBusiness implements Trip {
+
+      static Logger logger = Logger.getLogger(MerineBusiness.class.getSimpleName());
+
+      @Override
+      public void trip() {
+         logger.log(Level.INFO, "Yes, Fery service to mentioned location is available with the business class.");
+      }
+
+   }
+   ```
+   
+   *MerineEconomy.java*
+   
+   ```java
+   package com.products.prod_classes;
+
+   import java.util.logging.Level;
+   import java.util.logging.Logger;
+
+   import com.products.prod_Interface.Trip;
+
+   public class MerineEconomy implements Trip{
+
+      static Logger logger = Logger.getLogger(MerineEconomy.class.getSimpleName());
+
+      @Override
+      public void trip() {
+         logger.log(Level.INFO, "Yes, we are serving to the mentioned location. Please welcome.");
+      }
+
+   }
+   ```
+   
+   *RoadBusiness.java*
+   
+   ```java
+   package com.products.prod_classes;
+
+   import java.util.logging.Level;
+   import java.util.logging.Logger;
+
+   import com.products.prod_Interface.Trip;
+
+   public class RoadBusiness implements Trip {
+
+      static Logger logger = Logger.getLogger(RoadBusiness.class.getSimpleName());
+
+      @Override
+      public void trip() {
+         logger.log(Level.INFO, "Yes, Bus with Business class service to the mentioned location is available.");
+      }
+
+   }
+   ```
+   
+   *RoadEconomy.java*
+   
+   ```java
+   package com.products.prod_classes;
+
+   import java.util.logging.Level;
+   import java.util.logging.Logger;
+
+   import com.products.prod_Interface.Trip;
+
+   public class RoadEconomy implements Trip{
+
+      static Logger logger = Logger.getLogger(RoadEconomy.class.getSimpleName());
+
+      @Override
+      public void trip() {
+         logger.log(Level.INFO, "Yes, Bus service to mentioned location is available.");
+      }
+
+   }
+
+   ```
+
+   *Step 3 : Create Abstract Factory interface (this can be a Interface / a Abstract Class)*
+   
+   *AbstractFactory.java*
+   
+   ```java
+   package com.abstractFactory;
+
+   import com.products.prod_Interface.Trip;
+
+   public interface AbstractFactory {
+
+      public Trip bookMyAirTrip();
+      public Trip bookMyRoadTrip();
+      public Trip bookMyMerineTrip();
+
+   }
+   ```
+   
+   *Step 4 : Add concrete factory to create products*
+   
+   *BusinessTrip.java*
+   
+   ```java
+   package com.concreteFactory;
+
+   import com.abstractFactory.AbstractFactory;
+   import com.products.prod_Interface.Trip;
+   import com.products.prod_classes.AirBusiness;
+   import com.products.prod_classes.MerineBusiness;
+   import com.products.prod_classes.RoadBusiness;
+
+   public class BusinessTrip implements AbstractFactory {
+
+      @Override
+      public Trip bookMyAirTrip() {
+         return new AirBusiness();
+      }
+
+      @Override
+      public Trip bookMyRoadTrip() {
+         return new RoadBusiness();
+      }
+
+      @Override
+      public Trip bookMyMerineTrip() {
+         return new MerineBusiness();
+      }
+
+   }
+   ```
+   
+   *EconomyTrip.java*
+   
+   ```java
+   package com.concreteFactory;
+
+   import com.abstractFactory.AbstractFactory;
+   import com.products.prod_Interface.Trip;
+   import com.products.prod_classes.AirEconomy;
+   import com.products.prod_classes.MerineEconomy;
+   import com.products.prod_classes.RoadEconomy;
+
+   public class EconomyTrip implements AbstractFactory {
+
+      @Override
+      public Trip bookMyAirTrip() {
+         return new AirEconomy();
+      }
+
+      @Override
+      public Trip bookMyRoadTrip() {
+         return new RoadEconomy();
+      }
+
+      @Override
+      public Trip bookMyMerineTrip() {
+         return new MerineEconomy();
+      }
+
+   }
+   ```
+   
+   *Step 5 : Add constants in an Enum*
+   
+   ```java
+   package com.enum_files;
+
+   public enum BusinessType {
+      BUSINESS,
+      ECONOMY
+   }
+   ```
+   
+   *Step 5 : Add client side classes*
+   
+   *FactoryProvider.java*
+   
+   ```java
+   package com.client;
+
+   import com.abstractFactory.AbstractFactory;
+   import com.products.prod_Interface.Trip;
+
+   public class FactoryProvider {
+      Trip airTrip;
+      Trip roadTrip;
+      Trip merineTrip;
+
+      public FactoryProvider(AbstractFactory factory){
+         airTrip = factory.bookMyAirTrip();
+         roadTrip = factory.bookMyRoadTrip();
+         merineTrip = factory.bookMyMerineTrip();
+      }
+
+      public void getResult() {
+         airTrip.trip();
+         roadTrip.trip();
+         merineTrip.trip();
+      }
+
+   }
+   ```
+   
+   *Client.java*
+   
+   ```java
+   package com.client;
+
+   import com.abstractFactory.AbstractFactory;
+   import com.concreteFactory.BusinessTrip;
+   import com.concreteFactory.EconomyTrip;
+   import com.enum_files.BusinessType;
+
+   public class Client {
+
+      private static FactoryProvider getFactory(BusinessType businessType) {
+         FactoryProvider fProvider = null;
+         AbstractFactory factory;
+         if(BusinessType.BUSINESS == businessType) {
+             factory = new BusinessTrip();
+             fProvider = new FactoryProvider(factory);
+         }else if(BusinessType.ECONOMY == businessType) {
+            factory = new EconomyTrip();
+            fProvider = new FactoryProvider(factory);
+         }
+
+         return fProvider;
+      }
+
+      public static void main(String[] args) {
+         FactoryProvider myFactory = getFactory(BusinessType.BUSINESS);
+         myFactory.getResult();
+
+         myFactory = getFactory(BusinessType.ECONOMY);
+         myFactory.getResult();
+      }
+
+   }
+   ```
+
+
 
 3. #### Builder
 
