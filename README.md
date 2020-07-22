@@ -227,7 +227,13 @@ All design patterns are grouped into 3 groups
       
    * **UML Diagram**
    
-   
+   <div align="center">
+      <p>
+         <div>
+             <img src="images/AbstractFactoryDesignPattern.JPG" alt="Abstract Factory Design Pattern Image File">
+         </div>
+      </p>
+   </div>
 
 3. #### Builder
 
