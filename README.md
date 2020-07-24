@@ -54,7 +54,7 @@ All design patterns are grouped into 3 groups
 
 | __#__ | **Hybrid Design Patterns** |
 | ----- | -------------------------- |
-| 1 | MVC Architectural Design Pattern |
+| 1 | [MVC Architectural Design Pattern](#mvc-architectural-design-pattern) |
 
 (*) - Important Software Design Patterns
 
@@ -592,19 +592,7 @@ All design patterns are grouped into 3 groups
 14. #### Proxy
 
 
+1. #### Visitor
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-26. #### Visitor
+1. MVC Architectural Design Pattern
