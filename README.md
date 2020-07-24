@@ -601,3 +601,6 @@ All design patterns are grouped into 3 groups
 
 
 1. MVC Architectural Design Pattern
+
+
+1. Lazy Loading Pattern
