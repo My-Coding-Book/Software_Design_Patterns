@@ -55,6 +55,11 @@ All design patterns are grouped into 3 groups
 | __#__ | **Hybrid Design Patterns** |
 | ----- | -------------------------- |
 | 1 | [MVC Architectural Design Pattern](#mvc-architectural-design-pattern) |
+| 1 | [Lazy Loading Pattern](#lazy-loading-pattern) |
+| 1 | [Interceptor Pattern](#interceptor-pattern) |
+| 1 | [Publish-Subscribe Pattern](#publish-subscribe-pattern) |
+| 1 | [Active Record Pattern](#active-record-pattern) |
+| 1 | [Resource Pool Pattern](#resource-pool-pattern) |
 
 (*) - Important Software Design Patterns
 
