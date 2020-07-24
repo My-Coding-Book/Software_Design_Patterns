@@ -34,7 +34,7 @@ All design patterns are grouped into 3 groups
    * The implemantation and the client should be loosely coupledin order to avoid avoid hard coding and dependencies.
    
 
-| # | Creational Design Pattern | # | Structural Design Pattern | # | Behavioral Design Pattern |
+| __#__ | **Creational Design Pattern** | __#__ | **Structural Design Pattern** | __#__ | **Behavioral Design Pattern** |
 | - | ------------------------- | - | ------------------------- | - | ------------------------- |
 | 1 | [Factory Method * ](#factory-method) | 7 | [Adapter * ](#adapter) | 15 | [Chain of Responsibility](#chain-of-responsibility) |
 | 2 | [Abstract Factory](#abstract-factory) | 8 | [Bridge](#bridge) | 16 | [Command](#command) |
@@ -48,6 +48,13 @@ All design patterns are grouped into 3 groups
 |  |  |  |  |24 | [Strategy * ](#strategy) |
 |  |  | | | 25 | [Template method](#tempate-method) |
 |  |  | | | 26 | [Visitor](#visitor) |
+
+
+* #### Some new/advanced/hybrid design patterns
+
+| __#__ | **Hybrid Design Patterns** |
+| ----- | -------------------------- |
+| 1 | MVC Architectural Design Pattern |
 
 (*) - Important Software Design Patterns
 
